@@ -1,5 +1,6 @@
 import react, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Ceklogin.css';
 const CekLogin = () => {
   const [Open, setOpen] = useState(false);
   const [UserLog, setUSerLog] = useState('');
@@ -74,8 +75,8 @@ const CekLogin = () => {
   };
 
   return (
-    <>
-      <div className="bg-white p-2 dark:bg-gray-900 flex w-full flex-wrap justify-center h-screen">
+    <div className="w-full ">
+      <div className="bg-white p-2 dark:bg-gray-900 flex w-full flex-wrap lg:flex-nowrap justify-center h-screen">
         <div className="w-full max-w-sm p-4 z-20 bg-white border  border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
           <form onSubmit={Login} className="space-y-6" action="#">
             <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to Kafka</h5>
@@ -187,7 +188,10 @@ const CekLogin = () => {
             </button>
           </div>
         </div>
-        <div className={`w-full max-w-sm p-4 bg-white border border-gray-200 transition-transform ${Open ? 'translate-x-0' : '-translate-x-full'} rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700`}>
+        <div
+          className={`Regis w-full max-w-sm p-4 bg-white border border-gray-200 transition-transform  ${Open ? 'translate-x-0' : '-translate-x-full'}
+        }  rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700`}
+        >
           <form onSubmit={Register} className="space-y-6" action="#">
             <h5 className="text-xl font-medium text-gray-900 dark:text-white">Register</h5>
             <label for="email-address-icon" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -288,7 +292,7 @@ const CekLogin = () => {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default CekLogin;

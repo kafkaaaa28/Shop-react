@@ -20,7 +20,7 @@ const App = () => {
       <Router>
         <div className="bg-white dark:bg-gray-900 h-screen">
           <Navbars count={count} />
-          <div className="flex flex-col bg-white dark:bg-gray-900 sm:flex-col sm:justify-center sm:items-center md:flex-row md:justify-center md:items-center lg:flex-row">
+          <div className="flex flex-col w-full bg-white dark:bg-gray-900 sm:flex-col sm:justify-center sm:items-center md:flex-row md:justify-center md:items-center lg:flex-row">
             <Routes>
               <Route path="/" element={<Jumbotron />} />
               <Route path="/cards" element={<DelayCards addCount={addCount} />} />
