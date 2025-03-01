@@ -42,7 +42,7 @@ const Navbars = ({ count }) => {
           <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
           {isAdmin ? '' : <span className="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-black">Kafka</span>}
         </a>
-        <div className="flex gap-10 ">
+        <div className="mt-4 ml-[100px] flex gap-10 sm:mt-[0px] ">
           <DarkMode />
           {isAdmin ? (
             ''
