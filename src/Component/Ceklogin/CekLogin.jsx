@@ -26,7 +26,7 @@ const CekLogin = () => {
       localStorage.setItem('username', UserLog);
       localStorage.setItem('password', PassLog);
       alert('Admin login successful');
-      navigate('/');
+      navigate('/Dashboard');
       window.location.reload();
     } else if (localStorage.getItem('username') === UserLog.trim() && localStorage.getItem('password') === PassLog.trim()) {
       alert(`login sebagai ${UserLog} berhasil`);
